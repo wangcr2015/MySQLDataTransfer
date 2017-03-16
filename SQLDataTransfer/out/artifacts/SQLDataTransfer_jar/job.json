@@ -1,0 +1,29 @@
+{
+  "srcUrl" : "jdbc:mysql://168.168.207.70:3308/his",
+  "srcUser" : "root",
+  "srcPassword" : "root",
+  "destUrl" : "jdbc:mysql://168.168.207.70:3308/mydb",
+  "destUser" : "root",
+  "destPassword" : "root",
+  "tableList" :
+  [
+    {
+      "name" : "his_deliver",
+      "condition" : null,
+      "allCol" : true,
+      "columns" : null,
+      "jobSplit" : "init_date",
+      "splitType" : 1,
+      "workerNum" : 5
+    },
+    {
+      "name" : "his_fundjour",
+      "condition" : null,
+      "allCol" : false,
+      "columns" : [ "init_date","serial_no","client_id","fund_account","money_type","exchange_type","curr_date","curr_time","business_flag","op_branch_no","operator_no","op_station","op_entrust_way","branch_no","bank_no","occur_balance","post_balance","join_date","join_serial_no","bk_serial_no","frozen_kind","join_info","remark","real_status","position_str","cancel_serialno","client_group","room_code","asset_prop","limit_flag","risk_level","corp_client_group","corp_risk_level","asset_level","client_name" ],
+      "jobSplit" : "init_date",
+      "splitType" : 1,
+      "workerNum" : 5
+    }
+  ]
+}

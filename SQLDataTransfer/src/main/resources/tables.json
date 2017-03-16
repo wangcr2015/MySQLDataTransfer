@@ -1,0 +1,20 @@
+{
+  "srcUrl" : "jdbc:mysql://168.168.207.70:3308/his",
+  "srcUser" : "root",
+  "srcPassword" : "root",
+  "destUrl" : "jdbc:mysql://168.168.207.70:3308/mydb",
+  "destUser" : "root",
+  "destPassword" : "root",
+  "tableList" :
+  [
+    {
+      "name" : "his_deliver",
+      "condition" : null,
+      "allCol" : true,
+      "columns" : null,
+      "jobSplit" : "id",
+      "splitType" : 0,
+      "workerNum" : 1
+    }
+  ]
+}

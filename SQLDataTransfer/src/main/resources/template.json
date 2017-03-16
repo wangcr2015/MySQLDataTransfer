@@ -1,0 +1,29 @@
+{
+  "srcUrl" : "jdbc:mysql://127.0.0.1:3306/test",
+  "srcUser" : "root",
+  "srcPassword" : "root",
+  "destUrl" : "jdbc:mysql://127.0.0.1:3308/test",
+  "destUser" : "root",
+  "destPassword" : "root",
+  "tableList" :
+  [
+    {
+      "name" : "account",
+      "condition" : null,
+      "allCol" : false,
+      "columns" : [ "id", "date", "outgo", "type", "amount", "comments"],
+      "jobSplit" : "date",
+      "splitType" : 0,
+      "workerNum" : 1
+    },
+    {
+      "name" : "cost_income_type",
+      "condition" : null,
+      "allCol" : 1,
+      "columns" : [],
+      "jobSplit": "id",
+      "splitType" : 0,
+      "workerNum" : 1
+    }
+  ]
+}
